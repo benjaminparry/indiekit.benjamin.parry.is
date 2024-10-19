@@ -8,7 +8,7 @@ export default {
     postTypes: {
       note: {
         post: {
-          path: "notes/{yyyy}-{MM}-{dd}-{n}.markdown",
+          path: "collecting/thoughts/{yyyy}-{MM}-{dd}-{n}.md",
           url: "{yyyy}/{DDD}/n{n}/",
         },
       },
