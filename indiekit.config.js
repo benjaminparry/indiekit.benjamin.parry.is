@@ -60,6 +60,7 @@ export default {
   "@indiekit/store-github": {
     user: "benjaminparry",
     repo: "benjamin.parry.is",
+    token: process.env.GITHUB_TOKEN,
   },
   "@indiekit/syndicator-mastodon": {
     checked: false,
