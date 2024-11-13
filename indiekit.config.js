@@ -28,8 +28,8 @@ export default {
       },
       note: {
         post: {
-          path: "source/collecting/thoughts/{yyyy}-{MM}-{dd}-{n}.md",
-          url: "{yyyy}/{DDD}/n{n}/",
+          path: "source/collecting/thoughts/{yyyy}-{MM}-{dd}-{slug}.md",
+          url: "/collecting/thoughts/{yyyy}/{MM}/{slug}/",
         },
       },
       photo: {
