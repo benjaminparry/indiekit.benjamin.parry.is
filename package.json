@@ -1,5 +1,5 @@
 {
-  "name": "benjamin.parry.is-indiekit",
+  "name": "indiekit.benjamin.parry.is",
   "version": "1.0.0",
   "description": "Indiekit server for https://benjamin.parry.is",
   "main": "index.config.js",
