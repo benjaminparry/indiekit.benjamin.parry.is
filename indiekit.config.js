@@ -15,43 +15,39 @@ export default {
   publication: {
     locale: "en-GB",
     me: "https://benjamin.parry.is",
+    storeMessageTemplate: (metaData) =>
+        `🤖<( ${metaData.result} a ${metaData.postType} ${metaData.fileType} )`,
     postTypes: {
       article: {
         post: {
-          path: "articles/{yyyy}-{MM}-{dd}-{slug}.md",
-          url: "{yyyy}/{DDD}/a{n}/{slug}/",
+          path: "source/writing/{yyyy}-{MM}-{dd}-{slug}.md",
+          url: "writing/{yyyy}/{MM}/{slug}/",
         },
         media: {
-          path: "media/{yyyy}/{DDD}/a{n}/{filename}",
-          url: "media/{yyyy}/{DDD}/a{n}/{filename}",
+          path: "source/assets/images/writing/{yyyy}/{MM}/{filename}",
+          url: "assets/images/writing/{yyyy}/{MM}/{filename}",
         },
       },
       note: {
         post: {
           path: "source/collecting/thoughts/{yyyy}-{MM}-{dd}-{slug}.md",
-          url: "/collecting/thoughts/{yyyy}/{MM}/{slug}/",
-        },
-      },
-      photo: {
-        post: {
-          path: "photos/{yyyy}-{MM}-{dd}-{n}.md",
-          url: "{yyyy}/{DDD}/p{n}/",
+          url: "collecting/thoughts/{yyyy}/{MM}/{slug}/",
         },
         media: {
-          path: "media/{yyyy}/{DDD}/p{n}/{filename}",
-          url: "media/{yyyy}/{DDD}/p{n}/{filename}",
+          path: "source/assets/images/collecting/thoughts/{yyyy}/{MM}/{filename}",
+          url: "assets/images/collecting/thoughts/{yyyy}/{MM}/{filename}",
         },
       },
       bookmark: {
         post: {
-          path: "bookmarks/{yyyy}-{MM}-{dd}-{slug}.md",
-          url: "{yyyy}/{DDD}/b{n}/{slug}/",
+          path: "source/collecting/links/{yyyy}-{MM}-{dd}-{slug}.md",
+          url: "collecting/links/{yyyy}/{MM}/{slug}/",
         },
       },
       reply: {
         post: {
-          path: "replies/{yyyy}-{MM}-{dd}-{n}.md",
-          url: "{yyyy}/{DDD}/r{n}/",
+          path: "source/collecting/replies/{yyyy}-{MM}-{dd}-{slug}.md",
+          url: "collecting/replies/{yyyy}/{MM}/{slug}/",
         },
       },
     },
