@@ -30,13 +30,6 @@ export default {
       },
       note: {
         name: "Thought",
-        fields: {
-            name: { required: true },
-            content: { required: true },
-            category: {},
-            published: { required: true },
-            visibility: {},
-        },
         post: {
           path: "source/collecting/thoughts/{yyyy}-{MM}-{dd}-{slug}.md",
           url: "collecting/thoughts/{yyyy}/{MM}/{slug}/",
