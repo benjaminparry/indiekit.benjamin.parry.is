@@ -56,6 +56,15 @@ export default {
     },
     slugSeparator: "-",
   },
+  "@indiekit/post-type-note": {
+    fields: {
+      name: { required: true },
+      content: { required: true },
+      category: {},
+      published: { required: true },
+      visibility: {},
+    },
+  },
   "@indiekit/store-github": {
     user: "benjaminparry",
     repo: "benjamin.parry.is",
