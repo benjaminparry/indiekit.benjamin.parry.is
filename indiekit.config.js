@@ -16,7 +16,7 @@ export default {
     locale: "en-GB",
     me: "https://benjamin.parry.is",
     storeMessageTemplate: (metaData) =>
-        `🤖<( ${metaData.result} a ${metaData.postType} ${metaData.fileType} )`,
+        `🤖<(BLEEP! BOOP! … I ${metaData.result} a ${metaData.postType} ${metaData.fileType})`,
     postTypes: {
       article: {
         post: {
@@ -55,17 +55,6 @@ export default {
       },
     },
     slugSeparator: "-",
-  },
-  "@indiekit/post-type-note": {
-    fields: {
-      name: { required: true },
-      content: { required: true },
-      summary: {},
-      category: {},
-      tags: {},
-      published: { required: true },
-      visibility: {},
-    },
   },
   "@indiekit/store-github": {
     user: "benjaminparry",
