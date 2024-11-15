@@ -29,6 +29,7 @@ export default {
         },
       },
       note: {
+        name: "Thought",
         post: {
           path: "source/collecting/thoughts/{yyyy}-{MM}-{dd}-{slug}.md",
           url: "collecting/thoughts/{yyyy}/{MM}/{slug}/",
@@ -39,12 +40,14 @@ export default {
         },
       },
       bookmark: {
+        name: "Link",
         post: {
           path: "source/collecting/links/{yyyy}-{MM}-{dd}-{slug}.md",
           url: "collecting/links/{yyyy}/{MM}/{slug}/",
         },
       },
       reply: {
+        name: "Reply",
         post: {
           path: "source/collecting/replies/{yyyy}-{MM}-{dd}-{slug}.md",
           url: "collecting/replies/{yyyy}/{MM}/{slug}/",
@@ -52,6 +55,17 @@ export default {
       },
     },
     slugSeparator: "-",
+  },
+  "@indiekit/post-type-note": {
+    fields: {
+      name: { required: true },
+      content: { required: true },
+      summary: {},
+      category: {},
+      tags: {},
+      published: { required: true },
+      visibility: {},
+    },
   },
   "@indiekit/store-github": {
     user: "benjaminparry",
