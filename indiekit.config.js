@@ -11,6 +11,7 @@ export default {
     "@indiekit/preset-eleventy",
     "@indiekit/store-github",
     "@indiekit/syndicator-mastodon",
+    "@indiekit/post-type-event",
   ],
   publication: {
     locale: "en-GB",
@@ -60,6 +61,9 @@ export default {
     user: "benjaminparry",
     repo: "benjamin.parry.is",
     token: process.env.GITHUB_TOKEN,
+  },
+  "@indiekit/post-type-event": {
+    name: "Attending"
   },
   "@indiekit/syndicator-mastodon": {
     checked: false,
