@@ -1,3 +1,4 @@
+import path from "node:path";
 import process from "node:process";
 
 export default {
@@ -54,6 +55,13 @@ export default {
           url: "collecting/replies/{yyyy}/{MM}/{slug}/",
         },
       },
+      event: {
+        name: "Attending",
+        post: {
+            path: "source/attending/{yyyy}-{MM}-{dd}-{slug}.md",
+          url: "attending/{yyyy}/{MM}/{slug}/",
+        }
+      }
     },
     slugSeparator: "-",
   },
