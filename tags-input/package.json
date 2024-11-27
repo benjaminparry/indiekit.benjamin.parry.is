@@ -1,7 +1,0 @@
-{
-  "name": "@paulrobertlloyd/tags-input",
-  "main": "index.js",
-  "type": "module",
-  "private": true,
-  "license": "MIT"
-}

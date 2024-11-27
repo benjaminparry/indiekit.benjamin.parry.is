@@ -13,7 +13,6 @@ export default {
     "@indiekit/store-github",
     "@indiekit/syndicator-mastodon",
     "@indiekit/post-type-event",
-    "@paulrobertlloyd/tags-input",
   ],
   publication: {
     locale: "en-GB",
@@ -47,16 +46,6 @@ export default {
         post: {
           path: "source/collecting/links/{yyyy}-{MM}-{dd}-{slug}.md",
           url: "collecting/links/{yyyy}/{MM}/{slug}/",
-        },
-        fields: {
-            "bookmark-of": { required: true },
-            name: {},
-            content: {},
-            category: {},
-            tags: {},
-            "post-status": {},
-            published: { required: true },
-            visibility: {},
         }
       },
       reply: {
