@@ -13,6 +13,7 @@ export default {
     "@indiekit/store-github",
     "@indiekit/syndicator-mastodon",
     "@indiekit/post-type-event",
+    "@indiekit/post-type-reply",
     "@paulrobertlloyd/tags-input",
   ],
   publication: {
@@ -62,15 +63,15 @@ export default {
       reply: {
         name: "Reply",
         post: {
-          path: "source/collecting/replies/{yyyy}-{MM}-{dd}-{slug}.md",
-          url: "collecting/replies/{yyyy}/{MM}/{slug}/",
+          path: "source/sending/replies/{yyyy}-{MM}-{dd}-{n}.md",
+          url: "sending/replies/{yyyy}/{MM}/{n}/",
         },
       },
       event: {
         name: "Attending",
         post: {
             path: "source/attending/{yyyy}-{MM}-{dd}-{slug}.md",
-          url: "attending/{yyyy}/{MM}/{slug}/",
+            url: "attending/{yyyy}/{MM}/{slug}/",
         }
       }
     },
