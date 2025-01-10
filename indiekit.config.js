@@ -71,7 +71,7 @@ export default {
       like: {
         name: "Like",
         post: {
-          path: "source/sending/likes/{yyyy}-{MM}-{dd}-reply_{yyyy}{MM}{dd}{HH}{mm}{ss}.md",
+          path: "source/sending/likes/{yyyy}-{MM}-{dd}-like_{yyyy}{MM}{dd}{HH}{mm}{ss}.md",
           url: "sending/likes/{yyyy}/{MM}/like_{yyyy}{MM}{dd}{HH}{mm}{ss}/",
         },
       },
