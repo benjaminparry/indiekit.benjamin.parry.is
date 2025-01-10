@@ -63,8 +63,8 @@ export default {
       reply: {
         name: "Reply",
         post: {
-          path: "source/sending/replies/{yyyy}-{MM}-{dd}-{n}.md",
-          url: "sending/replies/{yyyy}/{MM}/{n}/",
+          path: "source/sending/replies/{yyyy}-{MM}-{dd}-reply_{n}.md",
+          url: "sending/replies/{yyyy}/{MM}/reply_{n}/",
         },
       },
       event: {
