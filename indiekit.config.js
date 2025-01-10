@@ -14,6 +14,7 @@ export default {
     "@indiekit/syndicator-mastodon",
     "@indiekit/post-type-event",
     "@indiekit/post-type-reply",
+    "@indiekit/post-type-like",
     "@paulrobertlloyd/tags-input",
   ],
   publication: {
@@ -65,6 +66,13 @@ export default {
         post: {
           path: "source/sending/replies/{yyyy}-{MM}-{dd}-reply_{yyyy}{MM}{dd}{HH}{mm}{ss}.md",
           url: "sending/replies/{yyyy}/{MM}/reply_{yyyy}{MM}{dd}{HH}{mm}{ss}/",
+        },
+      },
+      like: {
+        name: "Like",
+        post: {
+          path: "source/sending/likes/{yyyy}-{MM}-{dd}-reply_{yyyy}{MM}{dd}{HH}{mm}{ss}.md",
+          url: "sending/likes/{yyyy}/{MM}/like_{yyyy}{MM}{dd}{HH}{mm}{ss}/",
         },
       },
       event: {
