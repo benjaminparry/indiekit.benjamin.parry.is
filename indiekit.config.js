@@ -15,6 +15,7 @@ export default {
     "@indiekit/post-type-event",
     "@indiekit/post-type-reply",
     "@indiekit/post-type-like",
+    "@indiekit/post-type-photo",
     "@paulrobertlloyd/tags-input",
   ],
   publication: {
@@ -81,7 +82,18 @@ export default {
             path: "source/attending/{yyyy}-{MM}-{dd}-{slug}.md",
             url: "attending/{yyyy}/{MM}/{slug}/",
         }
-      }
+      },
+      photo: {
+        name: "Photo",
+        post: {
+          path: "source/collecting/photos/{yyyy}-{MM}-{dd}-photo_{yyyy}{MM}{dd}{HH}{mm}{ss}.md",
+          url: "collecting/photos/{yyyy}/{MM}/photo_{yyyy}{MM}{dd}{HH}{mm}{ss}/",
+        },
+        media: {
+            path: "source/assets/images/collecting/photos/{yyyy}/{MM}/{filename}",
+            url: "assets/images/collecting/photos/{yyyy}/{MM}/{filename}",
+          },
+      },
     },
     slugSeparator: "-",
   },
